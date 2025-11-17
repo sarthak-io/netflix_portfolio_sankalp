@@ -37,11 +37,11 @@ const Navbar: React.FC = () => {
             <img src={netflixLogo} alt="Netflix" />
           </Link>
           <ul className="navbar-links">
-            <li><Link to="/browse">Home</Link></li>
-            <li><Link to="/work-experience">Professional</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
+            <li><Link to="/browse">Browse</Link></li>
+            <li><Link to="/work-experience">Filmography</Link></li>
+            <li><Link to="/skills">Creative Toolkit</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact-me">Hire Me</Link></li>
+            <li><Link to="/contact-me">Contact</Link></li>
           </ul>
         </div>
         <div className="navbar-right">
@@ -64,11 +64,11 @@ const Navbar: React.FC = () => {
           <img src={netflixLogo} alt="Netflix Logo" />
         </div>
         <ul>
-          <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Home</Link></li>
-          <li><Link to="/work-experience" onClick={closeSidebar}><FaBriefcase /> Professional</Link></li>
-          <li><Link to="/skills" onClick={closeSidebar}><FaTools /> Skills</Link></li>
+          <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Browse</Link></li>
+          <li><Link to="/work-experience" onClick={closeSidebar}><FaBriefcase /> Filmography</Link></li>
+          <li><Link to="/skills" onClick={closeSidebar}><FaTools /> Creative Toolkit</Link></li>
           <li><Link to="/projects" onClick={closeSidebar}><FaProjectDiagram /> Projects</Link></li>
-          <li><Link to="/contact-me" onClick={closeSidebar}><FaEnvelope /> Hire Me</Link></li>
+          <li><Link to="/contact-me" onClick={closeSidebar}><FaEnvelope /> Contact</Link></li>
         </ul>
       </div>
     </>

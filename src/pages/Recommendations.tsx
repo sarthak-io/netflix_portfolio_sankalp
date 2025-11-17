@@ -1,24 +1,23 @@
 import React from 'react';
 import './Recommendations.css';
-import chrisProfilePic from '../images/chris.jpg'; // Adjust the path based on your directory structure
+import chrisProfilePic from '../images/chris.jpg'; // Placeholder portrait
 
 const Recommendations: React.FC = () => {
   return (
     <div className='timeline-container'>
       <div className="recommendation-card">
         <div className="recommendation-header">
-          <img src={chrisProfilePic} alt="Chris Smith" className="profile-pic" />
+          <img src={chrisProfilePic} alt="Aditi Sharma" className="profile-pic" />
           <div>
-            <h3>Chris Smith</h3>
-            <p>Head of Kajima Community</p>
-            <p className="date">October 24, 2024</p>
+            <h3>Aditi Sharma</h3>
+            <p>Producer, Paper Lantern Films</p>
+            <p className="date">January 18, 2025</p>
           </div>
         </div>
         <div className="recommendation-body">
-          <p>✨ "It is with great pleasure that I write this reference for Sumanth, who worked for us as a software developer at Kajima from June 2023. Unfortunately, due to a change in the company’s structure, we have made the difficult decision to make their position redundant. This in no way reflects on their performance, which was consistently excellent.</p>
-          <p>During their time with us, Sumanth demonstrated strong technical expertise, a passion for problem-solving, a willingness to learn, and a collaborative spirit that greatly contributed to our team’s success. They played a pivotal role in developing and maintaining key features of our software <strong>BookingsPlus</strong> and <strong>NHS Open Space</strong>, consistently delivering high-quality code while meeting project deadlines. Their ability to quickly adapt to new technologies and their proactive approach to finding innovative solutions set them apart."</p>
-          <p>💼 "Sumanth also showed exceptional teamwork and communication skills, effectively collaborating with cross-functional teams, including product managers, designers, and QA. Their professionalism, positive attitude, and dedication to their work made them an asset to the team."</p>
-          <p>🌟 "I have no doubt that Sumanth will be a valuable addition to any organization, and I wholeheartedly recommend them for any future opportunities."</p>
+          <p>✨ "Sankalp is the rare filmmaker who can build a visual language, guide actors with care and still keep post-production perfectly organised. On <strong>Pegh</strong> he brought a warmth and vulnerability to every frame that we didn’t know the script was capable of."</p>
+          <p>🎬 "He wears many hats without ego—writing late-night rewrites, planning blocking with the AD team and then jumping into the grade to make sure the mood survives the edit. I trust him with sensitive performances and with tight schedules because he communicates clearly and keeps the crew safe."</p>
+          <p>🌈 "From branded films to festival shorts, Sankalp’s colour sensibilities and ability to pull intimate emotions out of crowded locations have elevated each project. I’ll work with him again in a heartbeat."</p>
         </div>
       </div>
     </div>
