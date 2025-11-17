@@ -11,20 +11,46 @@ const iconData: { [key: string]: JSX.Element } = {
   'university': <FaUniversity />
 }
 
+const FALLBACK_CERTIFICATIONS: Certification[] = [
+  {
+    title: 'Best Colour Grading',
+    issuer: 'Mumbai Indie Shorts Awards',
+    issuedDate: '2024',
+    link: 'https://filmfreeway.com/festivals',
+    iconName: 'ieee'
+  },
+  {
+    title: 'Emerging Director (Short Form)',
+    issuer: 'Delhi International Film Festival',
+    issuedDate: '2023',
+    link: 'https://diff.co.in',
+    iconName: 'university'
+  },
+  {
+    title: 'Colour Science Lab Residency',
+    issuer: 'Post Studio Mumbai',
+    issuedDate: '2022',
+    link: 'https://poststudiomumbai.com',
+    iconName: 'coursera'
+  }
+];
+
 const Certifications: React.FC = () => {
 
-  const [certifications, setCertifications] = useState<Certification[]>([]);
+  const [certifications, setCertifications] = useState<Certification[]>(FALLBACK_CERTIFICATIONS);
 
-  useEffect(() => { 
+  useEffect(() => {
     async function fetchCertifications() {
-      const data = await getCertifications();
-      setCertifications(data);
+      try {
+        const data = await getCertifications();
+        setCertifications(data);
+      } catch (error) {
+        console.error('Unable to fetch certifications, using awards + residencies snapshot.', error);
+      }
     }
 
     fetchCertifications();
   }, []);
-
-  if (certifications.length === 0) return <div>Loading...</div>;
 
   return (
     <div className="certifications-container">

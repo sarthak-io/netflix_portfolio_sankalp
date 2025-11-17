@@ -60,19 +60,48 @@ const techIcons: { [key: string]: JSX.Element } = {
 };
 
 
+const FALLBACK_PROJECTS: Project[] = [
+  {
+    title: 'Karakoram',
+    description: 'A contemplative short film about siblings racing sunrise in the mountains, captured in harsh light and gentle pastels.',
+    techUsed: 'Writing, Direction, Cinematography',
+    image: { url: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80' }
+  },
+  {
+    title: 'Pegh',
+    description: 'Indie drama following a radio host drifting through Delhi winters, with moody handheld camerawork and whispered dialogue.',
+    techUsed: 'Direction, Colour Grading, Sound Design',
+    image: { url: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=80' }
+  },
+  {
+    title: 'Ghalib Chai Bar',
+    description: 'A comedic ensemble short capturing the rush of an Old Delhi tea room, blending theatrical blocking with observational humour.',
+    techUsed: 'Screenwriting, Direction, Editing',
+    image: { url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80' }
+  },
+  {
+    title: 'Anima',
+    description: 'Feature-length thriller with bespoke LUTs and HDR deliveries that mirror a protagonist’s emotional descent.',
+    techUsed: 'Colour Grading, Look Development, HDR Mastering',
+    image: { url: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1000&q=80' }
+  }
+];
+
 const Projects: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>([])
-  
-  useEffect(() => { 
+  const [projects, setProjects] = useState<Project[]>(FALLBACK_PROJECTS)
+
+  useEffect(() => {
     async function fetchProjects() {
-      const data = await getProjects();
-      setProjects(data);
+      try {
+        const data = await getProjects();
+        setProjects(data);
+      } catch (error) {
+        console.error('Unable to fetch projects, displaying curated films instead.', error);
+      }
     }
-    
+
     fetchProjects()
   }, [])
-  
-  if (projects.length === 0) return <div>Loading...</div>;
 
   return (
     <div className="projects-container">
