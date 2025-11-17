@@ -1,123 +1,54 @@
-## 🌟 Sumanth Samala's Netflix inspired Portfolio 🌟 - https://sumanthsamala.com/
+## 🎬 Sankalp Chaturvedi — Netflix Inspired Portfolio
 
-Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development. It's designed to be lightweight, customizable, and professional while maintaining an approachable style.
+This repo powers my playful-but-professional homepage inspired by the Netflix browsing experience. I'm a Delhi NCR based director, writer, cinematographer and colourist. The app highlights my filmography, colour work, festival credentials and contact info using cinematic UI flourishes.
 
-Explore specific subdomains tailored to different tech stacks:
-
-- 🌟 [java.sumanthsamala.com](https://java.sumanthsamala.com/) for Java Spring Boot-related work.
-- 🌟 [node.sumanthsamala.com](https://node.sumanthsamala.com/) for Node.js and backend development.
-- 🌟 [frontend.sumanthsamala.com](https://frontend.sumanthsamala.com/) for frontend development expertise.
-- 🌟 [ror.sumanthsamala.com](https://ror.sumanthsamala.com/) for Ruby on Rails projects.
-
-![Screenshot from 2024-12-08 19-19-06](https://github.com/user-attachments/assets/f8220485-16ec-48cf-8cb2-7853540c5724)
+![Portfolio preview](image.png)
 
 ---
 
-## ✨ Features
+## ✨ What's inside?
 
-- 🌍 **Dynamic Content**: Powered by [DatoCMS](https://www.datocms.com) for easy content management.
-- ⚡ **Fast & Responsive**: Built with modern web technologies for seamless performance.
-- 🎨 **Customizable**: Modular and easy to adapt to your own needs.
-- 📈 **Professional Yet Personal**: Highlights projects, skills, and achievements.
-- 🎨 It can support various por
+- **Top Picks for collaborators** – Custom profile flows for directors, writers, colourists and cinephiles.
+- **Filmography timeline** – A vertical timeline that showcases recent shorts, features and training.
+- **Skills, awards and projects** – Modular cards that can be edited from code or from a CMS when tokens are provided.
+- **Contact CTA** – A stylised badge with direct email/phone links.
 
 ---
 
 ## 🛠️ Tech Stack
 
-This portfolio is built with love and:
-
-- ⚛️ **React** (Frontend)
-- ☁️ **AWS S3 & CloudFront** (Hosting and CDN)
-- 🖌️ **Tailwind CSS** (Styling)
-- 🛡️ **DatoCMS** (Content Management)
-- 🧩 **Other Cool Tools**: GitHub Actions
+- ⚛️ React + TypeScript
+- 🎨 CSS Modules & custom motion design
+- 📦 Create React App tooling
+- 🌐 (Optional) DatoCMS for dynamic content – the components now include graceful fallbacks so the site stays useful even without tokens.
 
 ---
 
-## ⭐ Show Your Support
-
-If you find this project helpful or inspiring, give it a ⭐ on GitHub—it means the world to me! 🌟
-
-Happy coding! 💻✨
-
----
-
-## 📚 Getting Started
-
-Want to set this up locally? Follow these steps:
-
-1. **Clone the Repository**: Copy the repository to your local system.
-2. **Install Dependencies**: Use a package manager to install the required dependencies.
+## 🚀 Getting Started
 
 ```bash
 nvm install 18
 nvm use 18
-```
-
-After upgrading Node.js, clear your node_modules and reinstall:
-
-```bash
-rm -rf node_modules
-npm cache clean --force
 npm install
-```
-
-3. **Configure Environment Variables**: Create a `.env` file and set up the necessary API keys and configurations.
-4. **Run the Project**: Start the development server.
-
-```bash
 npm start
 ```
 
-5. **Visit the Local Server**: Open your browser and navigate to the local server URL.
-   ![alt text](image.png)
+If you plan to hook the UI back into DatoCMS, create a `.env` with the appropriate `REACT_APP_DATOCMS_*` tokens mentioned in `src/queries/getDatoCmsToken.ts`.
 
 ---
 
-## 🤝 Contribution Guidelines
+## 🤝 Contributing
 
-Contributions are welcome and appreciated! 🥳 To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Commit your changes with a descriptive message.
-4. Push your changes to your branch.
-5. Open a Pull Request. 🎉
+Pull requests are welcome. Please open an issue if you spot a bug or want to suggest a cinematic enhancement.
 
 ---
 
-## 🐛 Issues and Feature Requests
+## 📬 Contact
 
-Found a bug? Have a feature in mind? 🤔 Feel free to raise an issue or suggest a feature!
-
-1. Go to the **Issues** tab in the repository.
-2. Click **New Issue**.
-3. Provide a clear description of the bug or feature request.
-4. If applicable, include screenshots or steps to reproduce the issue.
-
-Your feedback is valuable and helps make this project better for everyone. Thank you for contributing!
+- Email: [sankalpchaturvedi31@gmail.com](mailto:sankalpchaturvedi31@gmail.com)
+- Phone: [+91 92050 62634](tel:+919205062634)
+- LinkedIn: [linkedin.com/in/sankalp-chaturvedi](https://www.linkedin.com/in/sankalp-chaturvedi)
 
 ---
 
-## 🌟 Acknowledgments
-
-- Thanks to [DatoCMS](https://www.datocms.com) for powering the dynamic content.
-- Inspired by countless developers in the open-source community. 💻
-- Special shoutout to all contributors—you rock! 🤘
-
----
-
-## 📧 Contact Me
-
-- 💼 [Portfolio Website](https://sumanthsamala.com)
-- 📧 Email: [chintusamala96@gmail.com](mailto:chintusamala96@gmail.com)
-- 🔗 [LinkedIn](https://uk.linkedin.com/in/sumanth-samala-82431161)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to use it, modify it, and share it! 🌈
-
----
+MIT License.
