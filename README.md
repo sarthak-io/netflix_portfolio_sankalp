@@ -35,6 +35,14 @@ npm start
 
 If you plan to hook the UI back into DatoCMS, create a `.env` with the appropriate `REACT_APP_DATOCMS_*` tokens mentioned in `src/queries/getDatoCmsToken.ts`.
 
+> 🔐 **Need a token quickly?**
+>
+> 1. Copy the new `.env.example` file to `.env` in the project root.
+> 2. It already includes the provided default token (`REACT_APP_DATOCMS_DEFAULT_TOKEN=93e74cf44cec08aad277ce02e529d5`).
+> 3. Restart `npm start` so Create React App reloads the environment variables.
+
+From there you can swap in your own token at any time or add host-specific entries (e.g., `REACT_APP_DATOCMS_FRONTEND_TOKEN`) if you deploy to multiple domains.
+
 ---
 
 ## 🤝 Contributing
