@@ -7,9 +7,13 @@
   overflow: hidden;
 }
 
-.netflix-logo {
-  width: 500px;
-  height: auto;
+.netflix-text {
+  font-family: 'Bebas Neue', 'Netflix Sans', 'Arial', sans-serif;
+  font-size: clamp(2rem, 9vw, 7rem);
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  text-align: center;
+  color: #e50914;
   opacity: 0;
   transform: scale(0.8);
   animation: fadeIn 0.5s forwards ease-in;
@@ -22,7 +26,7 @@
   }
 }
 
-.animate.netflix-logo {
+.animate.netflix-text {
   animation: zoomOut 3s forwards ease-in-out;
 }
 
