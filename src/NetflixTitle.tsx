@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './NetflixTitle.css';
 import netflixSound from './netflix-sound.mp3';
 import { useNavigate } from 'react-router-dom';
-import { sankalpChaturvediLogo } from './images/sankalpChaturvediLogo';
+import sankalpChaturvediLogo from './images/logo-2.png';
 
 const NetflixTitle = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -27,8 +27,8 @@ const NetflixTitle = () => {
     <div className="netflix-container" onClick={handlePlaySound}>
       <img
         src={sankalpChaturvediLogo}
-        alt="Custom Logo" 
-        className={`netflix-logo ${isClicked ? 'animate' : ''}`} 
+        alt="Sankalp Chaturvedi logo"
+        className={`netflix-logo ${isClicked ? 'animate' : ''}`}
       />
     </div>
   );
